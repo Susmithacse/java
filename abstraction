@@ -1,0 +1,15 @@
+abstract class Bike{  
+    abstract void accelerate();  
+}  
+class Yamaha extends Bike{  
+    void accelerate(){
+        System.out.println("Yamaha::accelerate");
+     
+    }
+}
+class Main{
+    public static void main(String args[]){  
+        Bike obj = new Yamaha();    
+        obj.accelerate();           
+    }   
+}  
