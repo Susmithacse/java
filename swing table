@@ -1,0 +1,20 @@
+import javax.swing.*;    
+public class STableDemo1 
+{    
+    JFrame table_f;    
+    STableDemo1(){    
+    table_f=new JFrame();    
+    String table_data[][]={ {"1","Edward"}, {"2","Damon"}, {"3","Derek"}};    
+    String table_column[]={"Sl.No","NAME"};         
+    JTable table_jt=new JTable(table_data,table_column);    
+    table_jt.setBounds(30,40,200,300);          
+    JScrollPane table_sp=new JScrollPane(table_jt);    
+    table_f.add(table_sp);          
+    table_f.setSize(300,400);    
+    table_f.setVisible(true);    
+}     
+public static void main(String[] args) 
+{    
+    new STableDemo1();    
+}    
+}  
