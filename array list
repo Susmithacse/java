@@ -1,0 +1,18 @@
+import java.util.*;  
+class JavaExample{  
+   public static void main(String args[]){  
+      ArrayList<String> alist=new ArrayList<String>();  
+      alist.add("Edward");
+      alist.add("Jacob");
+      alist.add("Damon");
+      alist.add("Elajah");
+      alist.add("Derek");
+      alist.add("Klaus");
+  
+      System.out.println(alist);
+  
+      alist.add(3, "Stefan");
+  
+      System.out.println(alist);
+   }  
+}
